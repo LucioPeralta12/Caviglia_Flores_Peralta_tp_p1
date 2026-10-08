@@ -17,7 +17,7 @@ public class Juego extends InterfaceJuego
 	Juego()
 	{
 		// Inicializa el objeto entorno
-		this.entorno = new Entorno(this, "La Invasión de los Zombies Grinch", 800, 600);
+		this.entorno = new Entorno(this, "Delivery Rush", 800, 600);
 		
 		// Inicializar lo que haga falta para el juego
 		// ...
@@ -35,6 +35,13 @@ public class Juego extends InterfaceJuego
 	public void tick()
 	{
 		// Procesamiento de un instante de tiempo
+		entorno.colorFondo(Color.GRAY);
+		entorno.dibujarRectangulo(120, 100, 100, 100, 0, Color.GREEN);
+		entorno.dibujarRectangulo(250, 100, 100, 100, 0, Color.GREEN);
+		entorno.dibujarRectangulo(400, 100, 100, 100, 0, Color.GREEN);
+		entorno.dibujarRectangulo(550, 100, 100, 100, 0, Color.GREEN);
+		entorno.dibujarRectangulo(700, 100, 100, 100, 0, Color.GREEN);
+		entorno.dibujarRectangulo(400, 300, 800, 40, 0, Color.DARK_GRAY);
 		// ...
 		
 	}
